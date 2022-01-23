@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_infinite_pagination/model/user_model.dart';
-import 'package:workshop_infinite_pagination/repository/user_repo.dart';
 
 class ListItem extends StatelessWidget {
   final User user;

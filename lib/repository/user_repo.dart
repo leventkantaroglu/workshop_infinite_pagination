@@ -50,9 +50,8 @@ class UserRepository {
   Future<void> fetchUsers(int pageKey) async {
     String apiUrl = "https://randomuser.me/api/?results=$perPage&page=$pageKey";
     final response = await http.get(Uri.parse(apiUrl));
-    print(apiUrl);
+
     try {
-      throw Exception("Hata");
       for (var map in jsonDecode(response.body)["results"]) {
         users.add(User.fromMap(map));
       }
