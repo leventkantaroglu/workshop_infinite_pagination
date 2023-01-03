@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
   Widget bottomMessage(String message) {
     return bottomWidget(
       child: Padding(
-        padding: const EdgeInsets.all(18.0),
+        padding: const EdgeInsets.all(15.0),
         child: Text(message),
       ),
     );
